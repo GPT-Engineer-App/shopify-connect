@@ -1,13 +1,16 @@
-// Update this page (the content is just a fallback if you fail and example)
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center">
-      {/* Update with components here - default to put new layout sections as separate components in the components folder, and import them here */}
       <div>
-        <h1 className="text-3xl text-center">Your Blank Canvas</h1>
+        <h1 className="text-3xl text-center">Welcome to Our Ecommerce Site</h1>
         <p className="text-center">
-          Chat with the agent to start making edits.
+          <Link to="/products" className="text-blue-500">View Products</Link>
+        </p>
+        <p className="text-center">
+          <Link to="/about" className="text-blue-500">About Us</Link>
         </p>
       </div>
     </div>
